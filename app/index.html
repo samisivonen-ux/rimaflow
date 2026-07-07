@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="RimaFlow 2.0">
+  <title>RimaFlow 2.0 optimized</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-build="force2">
+  <div id="app" class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <div class="brand-line">
+          <span class="app-version">RimaFlow 2.0 optimized</span>
+          <span class="byline">by SSI 2026</span>
+        </div>
+        <h1 id="planName">Sahausohjain</h1>
+      </div>
+      <button id="menuBtn" class="ghost small" type="button" aria-expanded="false" aria-label="Avaa valikko">☰</button>
+    </header>
+
+    <nav id="menu" class="menu hidden" aria-label="Toiminnot">
+      <button id="showWorkBtn" type="button">Työ</button>
+      <button id="showPilesBtn" type="button">Pinot</button>
+      <button id="showPlanBtn" type="button">Suunnitelma</button>
+      <button id="exportBtn" type="button">Vie tilanne</button>
+      <label class="file-label">
+        Tuo suunnitelma
+        <input id="planFileInput" type="file" accept=".json,.csv,text/csv,application/json">
+      </label>
+      <button id="resetBtn" class="danger" type="button">Nollaa</button>
+    </nav>
+
+    <main>
+      <section id="statusPanel" class="status-panel" aria-live="polite">
+        <div class="progress-row">
+          <div>
+            <span class="muted">Palat</span>
+            <strong id="cutProgress">0 / 0</strong>
+          </div>
+          <div>
+            <span class="muted">Rimat</span>
+            <strong id="boardProgress">0 / 0</strong>
+          </div>
+          <div>
+            <span class="muted">Epäonn.</span>
+            <strong id="failedProgress">0</strong>
+          </div>
+        </div>
+        <div class="meter" aria-label="Edistyminen">
+          <div id="progressBar" class="meter-fill"></div>
+        </div>
+      </section>
+
+      <section id="workView" class="view">
+        <article id="measureCard" class="card measure-card work-card hidden">
+          <div class="step-meta">Uusi rima</div>
+          <h2>Mittaa rima</h2>
+          <label class="input-label" for="boardLengthInput">Mitattu pituus cm</label>
+          <div class="input-row">
+            <input id="boardLengthInput" type="number" inputmode="decimal" min="50" step="0.5" value="500" aria-label="Mitatun riman pituus senttimetreinä">
+            <button id="startBoardBtn" class="primary" type="button">Aloita rima</button>
+          </div>
+          <details class="details-panel">
+            <summary>Optimointiehdotus ja lisätiedot</summary>
+            <div id="nextFitPreview" class="preview-box"></div>
+          </details>
+        </article>
+
+        <article id="stepCard" class="card step-card work-card">
+          <div id="stepMeta" class="step-meta">Ladataan...</div>
+          <h2 id="stepTitle">Ladataan suunnitelmaa</h2>
+          <div id="lengthBadge" class="length-badge hidden">
+            <span id="lengthValue">0</span><span>cm</span>
+          </div>
+          <p id="stepInstruction" class="instruction"></p>
+          <div id="pileBox" class="pile-box hidden"></div>
+          <div class="actions">
+            <button id="successBtn" class="primary" type="button">Onnistui ja pinottu</button>
+            <button id="finishBoardBtn" class="primary hidden" type="button">Rima valmis – mittaa seuraava</button>
+            <button id="failBtn" class="warning" type="button">Sahaus ei onnistunut</button>
+            <button id="undoBtn" class="ghost" type="button">Peruuta</button>
+          </div>
+          <details class="details-panel">
+            <summary>Lisätiedot: käyttö, hukka ja jäljellä oleva pituus</summary>
+            <dl class="facts">
+              <div><dt>Rima</dt><dd id="factModel">-</dd></div>
+              <div><dt>Käyttö</dt><dd id="factUse">-</dd></div>
+              <div><dt>Arvioitu hukka</dt><dd id="factWaste">-</dd></div>
+              <div><dt>Jäljellä tämän jälkeen</dt><dd id="factRemaining">-</dd></div>
+            </dl>
+          </details>
+        </article>
+
+        <article id="doneCard" class="card done-card hidden">
+          <h2>Suunnitelma valmis</h2>
+          <p id="doneText"></p>
+          <button id="donePilesBtn" class="primary" type="button">Näytä pinot</button>
+        </article>
+
+        <article id="failHelp" class="card fail-help hidden secondary-card">
+          <h2>Kun sahaus ei onnistunut</h2>
+          <ol>
+            <li>Älä pinoa epävarmaa tai väärin sahattua palaa valmiisiin pinoihin.</li>
+            <li>Laita nykyinen rima erilliseen <strong>HYLKY/KESKEN</strong>-pinoon.</li>
+            <li>Jo aiemmin kuitatut ja pinotut palat jäävät voimaan.</li>
+            <li>MVP-ohje: jätä tämän riman loput tekemättä. Tekemättömät palat palaavat jonoon ja sovellus optimoi ne seuraavalle mitatulle rimalla.</li>
+          </ol>
+          <div class="actions">
+            <button id="confirmFailBtn" class="warning" type="button">Merkitse rima kesken ja mittaa seuraava</button>
+            <button id="cancelFailBtn" class="ghost" type="button">Palaa</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="pilesView" class="view hidden">
+        <article class="card">
+          <h2>Pinot</h2>
+          <p class="muted">Pidä kentällä erillinen merkintä jokaiselle pinolle. Sovellus näyttää montako palaa pinossa pitäisi olla.</p>
+          <div id="pilesList" class="list"></div>
+        </article>
+      </section>
+
+      <section id="planView" class="view hidden">
+        <article class="card">
+          <h2>Sahaussuunnitelma</h2>
+          <p class="muted">Tämä versio käyttää dynaamista optimointia: alkuperäinen suunnitelma on tarvittavien palojen lista, mutta sahattava palajärjestys valitaan aina mitatun riman mukaan.</p>
+          <div id="planSummary" class="summary-grid"></div>
+          <h3>Alkuperäiset suunnitelmarimat</h3>
+          <div id="boardsList" class="list compact"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,2655 @@
+{
+  "schema_version": "1.0",
+  "id": "mokin-kuistin-ritilat-2026-07-06",
+  "name": "Mökin kuistin ritilät – sahausflow",
+  "description": "Mobile friendly sahausohje 5 m rimoille. Jokainen sahattu kappale kuitataan ja pinotaan ohjeen mukaan.",
+  "units": "cm",
+  "generated_from": "mokin_kuistin_ritilat_sahaussuunnitelma.xlsx",
+  "summary": {
+    "source_file": "mokin_kuistin_ritilat_sahaussuunnitelma.xlsx",
+    "generated_at": "2026-07-06T09:41:58",
+    "stock_length_cm": 500,
+    "planning_length_cm": 495,
+    "kerf_margin_cm": 5,
+    "total_boards": 50,
+    "total_cuts": 154,
+    "total_length_cm": 24633,
+    "total_waste_cm": 367
+  },
+  "failure_policy": {
+    "mode": "skip_rest_of_current_board",
+    "instruction": "Jos sahaus epäonnistuu, jätä nykyinen 5 m rima kesken, merkitse se HYLKY/KESKEN-pinoon ja jatka seuraavasta 5 m rimasta. Jo hyväksytyt ja pinotut palat jäävät voimaan."
+  },
+  "piles": [
+    {
+      "id": "V01-VAAKA-164",
+      "label": "Pino V01 vaaka 164 cm",
+      "length_cm": 164,
+      "needed": 11,
+      "kind": "vaakarima",
+      "interval": 1,
+      "note": "Väli 1: vaakarimat"
+    },
+    {
+      "id": "V01-PYSTY-111",
+      "label": "Pino V01 pysty 111 cm",
+      "length_cm": 111,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 1,
+      "note": "Väli 1: pystyrimat"
+    },
+    {
+      "id": "V02-VAAKA-177",
+      "label": "Pino V02 vaaka 177 cm",
+      "length_cm": 177,
+      "needed": 11,
+      "kind": "vaakarima",
+      "interval": 2,
+      "note": "Väli 2: vaakarimat"
+    },
+    {
+      "id": "V02-PYSTY-116",
+      "label": "Pino V02 pysty 116 cm",
+      "length_cm": 116,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 2,
+      "note": "Väli 2: pystyrimat"
+    },
+    {
+      "id": "V03-VAAKA-164",
+      "label": "Pino V03 vaaka 164 cm",
+      "length_cm": 164,
+      "needed": 12,
+      "kind": "vaakarima",
+      "interval": 3,
+      "note": "Väli 3: vaakarimat"
+    },
+    {
+      "id": "V03-PYSTY-121",
+      "label": "Pino V03 pysty 121 cm",
+      "length_cm": 121,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 3,
+      "note": "Väli 3: pystyrimat"
+    },
+    {
+      "id": "V04-VAAKA-180",
+      "label": "Pino V04 vaaka 180 cm",
+      "length_cm": 180,
+      "needed": 13,
+      "kind": "vaakarima",
+      "interval": 4,
+      "note": "Väli 4: vaakarimat"
+    },
+    {
+      "id": "V04-PYSTY-131",
+      "label": "Pino V04 pysty 131 cm",
+      "length_cm": 131,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 4,
+      "note": "Väli 4: pystyrimat"
+    },
+    {
+      "id": "V05-VAAKA-193",
+      "label": "Pino V05 vaaka 193 cm",
+      "length_cm": 193,
+      "needed": 12,
+      "kind": "vaakarima",
+      "interval": 5,
+      "note": "Väli 5: vaakarimat"
+    },
+    {
+      "id": "V05-PYSTY-121",
+      "label": "Pino V05 pysty 121 cm",
+      "length_cm": 121,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 5,
+      "note": "Väli 5: pystyrimat"
+    },
+    {
+      "id": "V06-VAAKA-192",
+      "label": "Pino V06 vaaka 192 cm",
+      "length_cm": 192,
+      "needed": 11,
+      "kind": "vaakarima",
+      "interval": 6,
+      "note": "Väli 6: vaakarimat"
+    },
+    {
+      "id": "V06-PYSTY-111",
+      "label": "Pino V06 pysty 111 cm",
+      "length_cm": 111,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 6,
+      "note": "Väli 6: pystyrimat"
+    },
+    {
+      "id": "V07-VAAKA-198",
+      "label": "Pino V07 vaaka 198 cm",
+      "length_cm": 198,
+      "needed": 10,
+      "kind": "vaakarima",
+      "interval": 7,
+      "note": "Väli 7: vaakarimat"
+    },
+    {
+      "id": "V07-PYSTY-106",
+      "label": "Pino V07 pysty 106 cm",
+      "length_cm": 106,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 7,
+      "note": "Väli 7: pystyrimat"
+    },
+    {
+      "id": "V08-VAAKA-195",
+      "label": "Pino V08 vaaka 195 cm",
+      "length_cm": 195,
+      "needed": 9,
+      "kind": "vaakarima",
+      "interval": 8,
+      "note": "Väli 8: vaakarimat"
+    },
+    {
+      "id": "V08-PYSTY-101",
+      "label": "Pino V08 pysty 101 cm",
+      "length_cm": 101,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 8,
+      "note": "Väli 8: pystyrimat"
+    },
+    {
+      "id": "V09-VAAKA-165",
+      "label": "Pino V09 vaaka 165 cm",
+      "length_cm": 165,
+      "needed": 9,
+      "kind": "vaakarima",
+      "interval": 9,
+      "note": "Väli 9: vaakarimat"
+    },
+    {
+      "id": "V09-PYSTY-101",
+      "label": "Pino V09 pysty 101 cm",
+      "length_cm": 101,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 9,
+      "note": "Väli 9: pystyrimat"
+    },
+    {
+      "id": "V10-VAAKA-246",
+      "label": "Pino V10 vaaka 246 cm",
+      "length_cm": 246,
+      "needed": 6,
+      "kind": "vaakarima",
+      "interval": 10,
+      "note": "Väli 10: vaakarimat"
+    },
+    {
+      "id": "V10-PYSTY-71",
+      "label": "Pino V10 pysty 71 cm",
+      "length_cm": 71,
+      "needed": 5,
+      "kind": "pystyrima",
+      "interval": 10,
+      "note": "Väli 10: pystyrimat"
+    }
+  ],
+  "boards": [
+    {
+      "id": "R001",
+      "number": 1,
+      "stock_length_cm": 500,
+      "model": 1,
+      "model_repeat": 1,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R001-C01",
+          "seq": 1,
+          "length_cm": 131,
+          "pile_id": "V04-PYSTY-131",
+          "pile_label": "Pino V04 pysty 131 cm",
+          "piece_id": "V04-PYSTY-131-01",
+          "piece_label": "Pino V04 pysty 131 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 4,
+          "instruction": "Sahaa 131 cm ja pinoa: Pino V04 pysty 131 cm"
+        },
+        {
+          "id": "R001-C02",
+          "seq": 2,
+          "length_cm": 111,
+          "pile_id": "V01-PYSTY-111",
+          "pile_label": "Pino V01 pysty 111 cm",
+          "piece_id": "V01-PYSTY-111-01",
+          "piece_label": "Pino V01 pysty 111 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 1,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V01 pysty 111 cm"
+        },
+        {
+          "id": "R001-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V01-PYSTY-111",
+          "pile_label": "Pino V01 pysty 111 cm",
+          "piece_id": "V01-PYSTY-111-02",
+          "piece_label": "Pino V01 pysty 111 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 1,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V01 pysty 111 cm"
+        },
+        {
+          "id": "R001-C04",
+          "seq": 4,
+          "length_cm": 71,
+          "pile_id": "V10-PYSTY-71",
+          "pile_label": "Pino V10 pysty 71 cm",
+          "piece_id": "V10-PYSTY-71-01",
+          "piece_label": "Pino V10 pysty 71 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 10,
+          "instruction": "Sahaa 71 cm ja pinoa: Pino V10 pysty 71 cm"
+        },
+        {
+          "id": "R001-C05",
+          "seq": 5,
+          "length_cm": 71,
+          "pile_id": "V10-PYSTY-71",
+          "pile_label": "Pino V10 pysty 71 cm",
+          "piece_id": "V10-PYSTY-71-02",
+          "piece_label": "Pino V10 pysty 71 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 10,
+          "instruction": "Sahaa 71 cm ja pinoa: Pino V10 pysty 71 cm"
+        }
+      ]
+    },
+    {
+      "id": "R002",
+      "number": 2,
+      "stock_length_cm": 500,
+      "model": 2,
+      "model_repeat": 1,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R002-C01",
+          "seq": 1,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-01",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 1/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R002-C02",
+          "seq": 2,
+          "length_cm": 116,
+          "pile_id": "V02-PYSTY-116",
+          "pile_label": "Pino V02 pysty 116 cm",
+          "piece_id": "V02-PYSTY-116-01",
+          "piece_label": "Pino V02 pysty 116 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 2,
+          "instruction": "Sahaa 116 cm ja pinoa: Pino V02 pysty 116 cm"
+        },
+        {
+          "id": "R002-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V08-PYSTY-101",
+          "pile_label": "Pino V08 pysty 101 cm",
+          "piece_id": "V08-PYSTY-101-01",
+          "piece_label": "Pino V08 pysty 101 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 8,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V08 pysty 101 cm"
+        },
+        {
+          "id": "R002-C04",
+          "seq": 4,
+          "length_cm": 101,
+          "pile_id": "V08-PYSTY-101",
+          "pile_label": "Pino V08 pysty 101 cm",
+          "piece_id": "V08-PYSTY-101-02",
+          "piece_label": "Pino V08 pysty 101 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 8,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V08 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R003",
+      "number": 3,
+      "stock_length_cm": 500,
+      "model": 3,
+      "model_repeat": 1,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R003-C01",
+          "seq": 1,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-01",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 1/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R003-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-02",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 2/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R003-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V01-PYSTY-111",
+          "pile_label": "Pino V01 pysty 111 cm",
+          "piece_id": "V01-PYSTY-111-03",
+          "piece_label": "Pino V01 pysty 111 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 1,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V01 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R004",
+      "number": 4,
+      "stock_length_cm": 500,
+      "model": 3,
+      "model_repeat": 2,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R004-C01",
+          "seq": 1,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-03",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 3/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R004-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-04",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 4/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R004-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V01-PYSTY-111",
+          "pile_label": "Pino V01 pysty 111 cm",
+          "piece_id": "V01-PYSTY-111-04",
+          "piece_label": "Pino V01 pysty 111 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 1,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V01 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R005",
+      "number": 5,
+      "stock_length_cm": 500,
+      "model": 3,
+      "model_repeat": 3,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R005-C01",
+          "seq": 1,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-05",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 5/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R005-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-06",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 6/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R005-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V01-PYSTY-111",
+          "pile_label": "Pino V01 pysty 111 cm",
+          "piece_id": "V01-PYSTY-111-05",
+          "piece_label": "Pino V01 pysty 111 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 1,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V01 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R006",
+      "number": 6,
+      "stock_length_cm": 500,
+      "model": 3,
+      "model_repeat": 4,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R006-C01",
+          "seq": 1,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-07",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 7/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R006-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-08",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 8/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R006-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V06-PYSTY-111",
+          "pile_label": "Pino V06 pysty 111 cm",
+          "piece_id": "V06-PYSTY-111-01",
+          "piece_label": "Pino V06 pysty 111 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 6,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V06 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R007",
+      "number": 7,
+      "stock_length_cm": 500,
+      "model": 3,
+      "model_repeat": 5,
+      "planned_use_cm": 495,
+      "planned_waste_cm": 5,
+      "note": "Tiukka: mittaa aihio, käytä täysimittainen rima",
+      "cuts": [
+        {
+          "id": "R007-C01",
+          "seq": 1,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-09",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 9/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R007-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-10",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 10/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R007-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V06-PYSTY-111",
+          "pile_label": "Pino V06 pysty 111 cm",
+          "piece_id": "V06-PYSTY-111-02",
+          "piece_label": "Pino V06 pysty 111 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 6,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V06 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R008",
+      "number": 8,
+      "stock_length_cm": 500,
+      "model": 4,
+      "model_repeat": 1,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R008-C01",
+          "seq": 1,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-01",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 1/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R008-C02",
+          "seq": 2,
+          "length_cm": 101,
+          "pile_id": "V08-PYSTY-101",
+          "pile_label": "Pino V08 pysty 101 cm",
+          "piece_id": "V08-PYSTY-101-03",
+          "piece_label": "Pino V08 pysty 101 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 8,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V08 pysty 101 cm"
+        },
+        {
+          "id": "R008-C03",
+          "seq": 3,
+          "length_cm": 71,
+          "pile_id": "V10-PYSTY-71",
+          "pile_label": "Pino V10 pysty 71 cm",
+          "piece_id": "V10-PYSTY-71-03",
+          "piece_label": "Pino V10 pysty 71 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 10,
+          "instruction": "Sahaa 71 cm ja pinoa: Pino V10 pysty 71 cm"
+        },
+        {
+          "id": "R008-C04",
+          "seq": 4,
+          "length_cm": 71,
+          "pile_id": "V10-PYSTY-71",
+          "pile_label": "Pino V10 pysty 71 cm",
+          "piece_id": "V10-PYSTY-71-04",
+          "piece_label": "Pino V10 pysty 71 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 10,
+          "instruction": "Sahaa 71 cm ja pinoa: Pino V10 pysty 71 cm"
+        },
+        {
+          "id": "R008-C05",
+          "seq": 5,
+          "length_cm": 71,
+          "pile_id": "V10-PYSTY-71",
+          "pile_label": "Pino V10 pysty 71 cm",
+          "piece_id": "V10-PYSTY-71-05",
+          "piece_label": "Pino V10 pysty 71 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 10,
+          "instruction": "Sahaa 71 cm ja pinoa: Pino V10 pysty 71 cm"
+        }
+      ]
+    },
+    {
+      "id": "R009",
+      "number": 9,
+      "stock_length_cm": 500,
+      "model": 5,
+      "model_repeat": 1,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R009-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-01",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 1/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R009-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-02",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 2/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R009-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V03-PYSTY-121",
+          "pile_label": "Pino V03 pysty 121 cm",
+          "piece_id": "V03-PYSTY-121-01",
+          "piece_label": "Pino V03 pysty 121 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 3,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V03 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R010",
+      "number": 10,
+      "stock_length_cm": 500,
+      "model": 5,
+      "model_repeat": 2,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R010-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-02",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 2/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R010-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-03",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 3/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R010-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V03-PYSTY-121",
+          "pile_label": "Pino V03 pysty 121 cm",
+          "piece_id": "V03-PYSTY-121-02",
+          "piece_label": "Pino V03 pysty 121 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 3,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V03 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R011",
+      "number": 11,
+      "stock_length_cm": 500,
+      "model": 5,
+      "model_repeat": 3,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R011-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-03",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 3/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R011-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-04",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 4/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R011-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V03-PYSTY-121",
+          "pile_label": "Pino V03 pysty 121 cm",
+          "piece_id": "V03-PYSTY-121-03",
+          "piece_label": "Pino V03 pysty 121 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 3,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V03 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R012",
+      "number": 12,
+      "stock_length_cm": 500,
+      "model": 5,
+      "model_repeat": 4,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R012-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-04",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 4/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R012-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-05",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 5/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R012-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V03-PYSTY-121",
+          "pile_label": "Pino V03 pysty 121 cm",
+          "piece_id": "V03-PYSTY-121-04",
+          "piece_label": "Pino V03 pysty 121 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 3,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V03 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R013",
+      "number": 13,
+      "stock_length_cm": 500,
+      "model": 6,
+      "model_repeat": 1,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R013-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-01",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 1/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R013-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-06",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 6/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R013-C03",
+          "seq": 3,
+          "length_cm": 116,
+          "pile_id": "V02-PYSTY-116",
+          "pile_label": "Pino V02 pysty 116 cm",
+          "piece_id": "V02-PYSTY-116-02",
+          "piece_label": "Pino V02 pysty 116 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 2,
+          "instruction": "Sahaa 116 cm ja pinoa: Pino V02 pysty 116 cm"
+        }
+      ]
+    },
+    {
+      "id": "R014",
+      "number": 14,
+      "stock_length_cm": 500,
+      "model": 6,
+      "model_repeat": 2,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R014-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-02",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 2/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R014-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-07",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 7/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R014-C03",
+          "seq": 3,
+          "length_cm": 116,
+          "pile_id": "V02-PYSTY-116",
+          "pile_label": "Pino V02 pysty 116 cm",
+          "piece_id": "V02-PYSTY-116-03",
+          "piece_label": "Pino V02 pysty 116 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 2,
+          "instruction": "Sahaa 116 cm ja pinoa: Pino V02 pysty 116 cm"
+        }
+      ]
+    },
+    {
+      "id": "R015",
+      "number": 15,
+      "stock_length_cm": 500,
+      "model": 6,
+      "model_repeat": 3,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R015-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-03",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 3/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R015-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-08",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 8/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R015-C03",
+          "seq": 3,
+          "length_cm": 116,
+          "pile_id": "V02-PYSTY-116",
+          "pile_label": "Pino V02 pysty 116 cm",
+          "piece_id": "V02-PYSTY-116-04",
+          "piece_label": "Pino V02 pysty 116 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 2,
+          "instruction": "Sahaa 116 cm ja pinoa: Pino V02 pysty 116 cm"
+        }
+      ]
+    },
+    {
+      "id": "R016",
+      "number": 16,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 1,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R016-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-04",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 4/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R016-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-01",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 1/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R016-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V08-PYSTY-101",
+          "pile_label": "Pino V08 pysty 101 cm",
+          "piece_id": "V08-PYSTY-101-04",
+          "piece_label": "Pino V08 pysty 101 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 8,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V08 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R017",
+      "number": 17,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 2,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R017-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-05",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 5/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R017-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-02",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 2/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R017-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V08-PYSTY-101",
+          "pile_label": "Pino V08 pysty 101 cm",
+          "piece_id": "V08-PYSTY-101-05",
+          "piece_label": "Pino V08 pysty 101 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 8,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V08 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R018",
+      "number": 18,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 3,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R018-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-06",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 6/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R018-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-03",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 3/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R018-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V09-PYSTY-101",
+          "pile_label": "Pino V09 pysty 101 cm",
+          "piece_id": "V09-PYSTY-101-01",
+          "piece_label": "Pino V09 pysty 101 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 9,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V09 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R019",
+      "number": 19,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 4,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R019-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-07",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 7/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R019-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-04",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 4/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R019-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V09-PYSTY-101",
+          "pile_label": "Pino V09 pysty 101 cm",
+          "piece_id": "V09-PYSTY-101-02",
+          "piece_label": "Pino V09 pysty 101 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 9,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V09 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R020",
+      "number": 20,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 5,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R020-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-08",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 8/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R020-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-05",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 5/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R020-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V09-PYSTY-101",
+          "pile_label": "Pino V09 pysty 101 cm",
+          "piece_id": "V09-PYSTY-101-03",
+          "piece_label": "Pino V09 pysty 101 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 9,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V09 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R021",
+      "number": 21,
+      "stock_length_cm": 500,
+      "model": 7,
+      "model_repeat": 6,
+      "planned_use_cm": 494,
+      "planned_waste_cm": 6,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R021-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-09",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 9/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R021-C02",
+          "seq": 2,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-06",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 6/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R021-C03",
+          "seq": 3,
+          "length_cm": 101,
+          "pile_id": "V09-PYSTY-101",
+          "pile_label": "Pino V09 pysty 101 cm",
+          "piece_id": "V09-PYSTY-101-04",
+          "piece_label": "Pino V09 pysty 101 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 9,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V09 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R022",
+      "number": 22,
+      "stock_length_cm": 500,
+      "model": 8,
+      "model_repeat": 1,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R022-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-01",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 1/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R022-C02",
+          "seq": 2,
+          "length_cm": 111,
+          "pile_id": "V06-PYSTY-111",
+          "pile_label": "Pino V06 pysty 111 cm",
+          "piece_id": "V06-PYSTY-111-03",
+          "piece_label": "Pino V06 pysty 111 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 6,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V06 pysty 111 cm"
+        },
+        {
+          "id": "R022-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V06-PYSTY-111",
+          "pile_label": "Pino V06 pysty 111 cm",
+          "piece_id": "V06-PYSTY-111-04",
+          "piece_label": "Pino V06 pysty 111 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 6,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V06 pysty 111 cm"
+        },
+        {
+          "id": "R022-C04",
+          "seq": 4,
+          "length_cm": 106,
+          "pile_id": "V07-PYSTY-106",
+          "pile_label": "Pino V07 pysty 106 cm",
+          "piece_id": "V07-PYSTY-106-01",
+          "piece_label": "Pino V07 pysty 106 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 7,
+          "instruction": "Sahaa 106 cm ja pinoa: Pino V07 pysty 106 cm"
+        }
+      ]
+    },
+    {
+      "id": "R023",
+      "number": 23,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 1,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R023-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-02",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 2/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R023-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-01",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 1/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R023-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-02",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 2/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R024",
+      "number": 24,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 2,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R024-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-03",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 3/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R024-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-03",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 3/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R024-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-04",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 4/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R025",
+      "number": 25,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 3,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R025-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-04",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 4/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R025-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-05",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 5/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R025-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-06",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 6/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R026",
+      "number": 26,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 4,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R026-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-05",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 5/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R026-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-07",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 7/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R026-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-08",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 8/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R027",
+      "number": 27,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 5,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R027-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-06",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 6/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R027-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-09",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 9/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R027-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-10",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 10/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R028",
+      "number": 28,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 6,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R028-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-07",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 7/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R028-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V01-VAAKA-164",
+          "pile_label": "Pino V01 vaaka 164 cm",
+          "piece_id": "V01-VAAKA-164-11",
+          "piece_label": "Pino V01 vaaka 164 cm — osa 11/11",
+          "kind": "vaakarima",
+          "interval": 1,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V01 vaaka 164 cm"
+        },
+        {
+          "id": "R028-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-01",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 1/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R029",
+      "number": 29,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 7,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R029-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-08",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 8/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R029-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-02",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 2/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R029-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-03",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 3/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R030",
+      "number": 30,
+      "stock_length_cm": 500,
+      "model": 9,
+      "model_repeat": 8,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R030-C01",
+          "seq": 1,
+          "length_cm": 165,
+          "pile_id": "V09-VAAKA-165",
+          "pile_label": "Pino V09 vaaka 165 cm",
+          "piece_id": "V09-VAAKA-165-09",
+          "piece_label": "Pino V09 vaaka 165 cm — osa 9/9",
+          "kind": "vaakarima",
+          "interval": 9,
+          "instruction": "Sahaa 165 cm ja pinoa: Pino V09 vaaka 165 cm"
+        },
+        {
+          "id": "R030-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-04",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 4/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R030-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-05",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 5/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R031",
+      "number": 31,
+      "stock_length_cm": 500,
+      "model": 10,
+      "model_repeat": 1,
+      "planned_use_cm": 493,
+      "planned_waste_cm": 7,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R031-C01",
+          "seq": 1,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-07",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 7/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R031-C02",
+          "seq": 2,
+          "length_cm": 192,
+          "pile_id": "V06-VAAKA-192",
+          "pile_label": "Pino V06 vaaka 192 cm",
+          "piece_id": "V06-VAAKA-192-11",
+          "piece_label": "Pino V06 vaaka 192 cm — osa 11/11",
+          "kind": "vaakarima",
+          "interval": 6,
+          "instruction": "Sahaa 192 cm ja pinoa: Pino V06 vaaka 192 cm"
+        },
+        {
+          "id": "R031-C03",
+          "seq": 3,
+          "length_cm": 106,
+          "pile_id": "V07-PYSTY-106",
+          "pile_label": "Pino V07 pysty 106 cm",
+          "piece_id": "V07-PYSTY-106-02",
+          "piece_label": "Pino V07 pysty 106 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 7,
+          "instruction": "Sahaa 106 cm ja pinoa: Pino V07 pysty 106 cm"
+        }
+      ]
+    },
+    {
+      "id": "R032",
+      "number": 32,
+      "stock_length_cm": 500,
+      "model": 11,
+      "model_repeat": 1,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R032-C01",
+          "seq": 1,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-06",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 6/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R032-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-07",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 7/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R032-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-08",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 8/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R033",
+      "number": 33,
+      "stock_length_cm": 500,
+      "model": 11,
+      "model_repeat": 2,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R033-C01",
+          "seq": 1,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-09",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 9/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R033-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-10",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 10/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R033-C03",
+          "seq": 3,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-11",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 11/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        }
+      ]
+    },
+    {
+      "id": "R034",
+      "number": 34,
+      "stock_length_cm": 500,
+      "model": 12,
+      "model_repeat": 1,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R034-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-05",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 5/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R034-C02",
+          "seq": 2,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-06",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 6/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R034-C03",
+          "seq": 3,
+          "length_cm": 106,
+          "pile_id": "V07-PYSTY-106",
+          "pile_label": "Pino V07 pysty 106 cm",
+          "piece_id": "V07-PYSTY-106-03",
+          "piece_label": "Pino V07 pysty 106 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 7,
+          "instruction": "Sahaa 106 cm ja pinoa: Pino V07 pysty 106 cm"
+        }
+      ]
+    },
+    {
+      "id": "R035",
+      "number": 35,
+      "stock_length_cm": 500,
+      "model": 13,
+      "model_repeat": 1,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R035-C01",
+          "seq": 1,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-01",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 1/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        },
+        {
+          "id": "R035-C02",
+          "seq": 2,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-02",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 2/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        }
+      ]
+    },
+    {
+      "id": "R036",
+      "number": 36,
+      "stock_length_cm": 500,
+      "model": 13,
+      "model_repeat": 2,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R036-C01",
+          "seq": 1,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-03",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 3/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        },
+        {
+          "id": "R036-C02",
+          "seq": 2,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-04",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 4/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        }
+      ]
+    },
+    {
+      "id": "R037",
+      "number": 37,
+      "stock_length_cm": 500,
+      "model": 13,
+      "model_repeat": 3,
+      "planned_use_cm": 492,
+      "planned_waste_cm": 8,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R037-C01",
+          "seq": 1,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-05",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 5/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        },
+        {
+          "id": "R037-C02",
+          "seq": 2,
+          "length_cm": 246,
+          "pile_id": "V10-VAAKA-246",
+          "pile_label": "Pino V10 vaaka 246 cm",
+          "piece_id": "V10-VAAKA-246-06",
+          "piece_label": "Pino V10 vaaka 246 cm — osa 6/6",
+          "kind": "vaakarima",
+          "interval": 10,
+          "instruction": "Sahaa 246 cm ja pinoa: Pino V10 vaaka 246 cm"
+        }
+      ]
+    },
+    {
+      "id": "R038",
+      "number": 38,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 1,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R038-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-07",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 7/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R038-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-02",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 2/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R038-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V03-PYSTY-121",
+          "pile_label": "Pino V03 pysty 121 cm",
+          "piece_id": "V03-PYSTY-121-05",
+          "piece_label": "Pino V03 pysty 121 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 3,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V03 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R039",
+      "number": 39,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 2,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R039-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-08",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 8/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R039-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-03",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 3/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R039-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V05-PYSTY-121",
+          "pile_label": "Pino V05 pysty 121 cm",
+          "piece_id": "V05-PYSTY-121-01",
+          "piece_label": "Pino V05 pysty 121 cm — osa 1/5",
+          "kind": "pystyrima",
+          "interval": 5,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V05 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R040",
+      "number": 40,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 3,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R040-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-09",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 9/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R040-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-04",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 4/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R040-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V05-PYSTY-121",
+          "pile_label": "Pino V05 pysty 121 cm",
+          "piece_id": "V05-PYSTY-121-02",
+          "piece_label": "Pino V05 pysty 121 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 5,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V05 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R041",
+      "number": 41,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 4,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R041-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-10",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 10/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R041-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-05",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 5/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R041-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V05-PYSTY-121",
+          "pile_label": "Pino V05 pysty 121 cm",
+          "piece_id": "V05-PYSTY-121-03",
+          "piece_label": "Pino V05 pysty 121 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 5,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V05 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R042",
+      "number": 42,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 5,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R042-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-11",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 11/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R042-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-06",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 6/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R042-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V05-PYSTY-121",
+          "pile_label": "Pino V05 pysty 121 cm",
+          "piece_id": "V05-PYSTY-121-04",
+          "piece_label": "Pino V05 pysty 121 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 5,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V05 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R043",
+      "number": 43,
+      "stock_length_cm": 500,
+      "model": 14,
+      "model_repeat": 6,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R043-C01",
+          "seq": 1,
+          "length_cm": 193,
+          "pile_id": "V05-VAAKA-193",
+          "pile_label": "Pino V05 vaaka 193 cm",
+          "piece_id": "V05-VAAKA-193-12",
+          "piece_label": "Pino V05 vaaka 193 cm — osa 12/12",
+          "kind": "vaakarima",
+          "interval": 5,
+          "instruction": "Sahaa 193 cm ja pinoa: Pino V05 vaaka 193 cm"
+        },
+        {
+          "id": "R043-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-07",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 7/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R043-C03",
+          "seq": 3,
+          "length_cm": 121,
+          "pile_id": "V05-PYSTY-121",
+          "pile_label": "Pino V05 pysty 121 cm",
+          "piece_id": "V05-PYSTY-121-05",
+          "piece_label": "Pino V05 pysty 121 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 5,
+          "instruction": "Sahaa 121 cm ja pinoa: Pino V05 pysty 121 cm"
+        }
+      ]
+    },
+    {
+      "id": "R044",
+      "number": 44,
+      "stock_length_cm": 500,
+      "model": 15,
+      "model_repeat": 1,
+      "planned_use_cm": 491,
+      "planned_waste_cm": 9,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R044-C01",
+          "seq": 1,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-08",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 8/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R044-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-09",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 9/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R044-C03",
+          "seq": 3,
+          "length_cm": 116,
+          "pile_id": "V02-PYSTY-116",
+          "pile_label": "Pino V02 pysty 116 cm",
+          "piece_id": "V02-PYSTY-116-05",
+          "piece_label": "Pino V02 pysty 116 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 2,
+          "instruction": "Sahaa 116 cm ja pinoa: Pino V02 pysty 116 cm"
+        }
+      ]
+    },
+    {
+      "id": "R045",
+      "number": 45,
+      "stock_length_cm": 500,
+      "model": 16,
+      "model_repeat": 1,
+      "planned_use_cm": 490,
+      "planned_waste_cm": 10,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R045-C01",
+          "seq": 1,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-08",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 8/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R045-C02",
+          "seq": 2,
+          "length_cm": 106,
+          "pile_id": "V07-PYSTY-106",
+          "pile_label": "Pino V07 pysty 106 cm",
+          "piece_id": "V07-PYSTY-106-04",
+          "piece_label": "Pino V07 pysty 106 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 7,
+          "instruction": "Sahaa 106 cm ja pinoa: Pino V07 pysty 106 cm"
+        },
+        {
+          "id": "R045-C03",
+          "seq": 3,
+          "length_cm": 106,
+          "pile_id": "V07-PYSTY-106",
+          "pile_label": "Pino V07 pysty 106 cm",
+          "piece_id": "V07-PYSTY-106-05",
+          "piece_label": "Pino V07 pysty 106 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 7,
+          "instruction": "Sahaa 106 cm ja pinoa: Pino V07 pysty 106 cm"
+        },
+        {
+          "id": "R045-C04",
+          "seq": 4,
+          "length_cm": 101,
+          "pile_id": "V09-PYSTY-101",
+          "pile_label": "Pino V09 pysty 101 cm",
+          "piece_id": "V09-PYSTY-101-05",
+          "piece_label": "Pino V09 pysty 101 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 9,
+          "instruction": "Sahaa 101 cm ja pinoa: Pino V09 pysty 101 cm"
+        }
+      ]
+    },
+    {
+      "id": "R046",
+      "number": 46,
+      "stock_length_cm": 500,
+      "model": 17,
+      "model_repeat": 1,
+      "planned_use_cm": 490,
+      "planned_waste_cm": 10,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R046-C01",
+          "seq": 1,
+          "length_cm": 195,
+          "pile_id": "V08-VAAKA-195",
+          "pile_label": "Pino V08 vaaka 195 cm",
+          "piece_id": "V08-VAAKA-195-09",
+          "piece_label": "Pino V08 vaaka 195 cm — osa 9/9",
+          "kind": "vaakarima",
+          "interval": 8,
+          "instruction": "Sahaa 195 cm ja pinoa: Pino V08 vaaka 195 cm"
+        },
+        {
+          "id": "R046-C02",
+          "seq": 2,
+          "length_cm": 164,
+          "pile_id": "V03-VAAKA-164",
+          "pile_label": "Pino V03 vaaka 164 cm",
+          "piece_id": "V03-VAAKA-164-12",
+          "piece_label": "Pino V03 vaaka 164 cm — osa 12/12",
+          "kind": "vaakarima",
+          "interval": 3,
+          "instruction": "Sahaa 164 cm ja pinoa: Pino V03 vaaka 164 cm"
+        },
+        {
+          "id": "R046-C03",
+          "seq": 3,
+          "length_cm": 131,
+          "pile_id": "V04-PYSTY-131",
+          "pile_label": "Pino V04 pysty 131 cm",
+          "piece_id": "V04-PYSTY-131-02",
+          "piece_label": "Pino V04 pysty 131 cm — osa 2/5",
+          "kind": "pystyrima",
+          "interval": 4,
+          "instruction": "Sahaa 131 cm ja pinoa: Pino V04 pysty 131 cm"
+        }
+      ]
+    },
+    {
+      "id": "R047",
+      "number": 47,
+      "stock_length_cm": 500,
+      "model": 18,
+      "model_repeat": 1,
+      "planned_use_cm": 489,
+      "planned_waste_cm": 11,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R047-C01",
+          "seq": 1,
+          "length_cm": 198,
+          "pile_id": "V07-VAAKA-198",
+          "pile_label": "Pino V07 vaaka 198 cm",
+          "piece_id": "V07-VAAKA-198-10",
+          "piece_label": "Pino V07 vaaka 198 cm — osa 10/10",
+          "kind": "vaakarima",
+          "interval": 7,
+          "instruction": "Sahaa 198 cm ja pinoa: Pino V07 vaaka 198 cm"
+        },
+        {
+          "id": "R047-C02",
+          "seq": 2,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-10",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 10/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R047-C03",
+          "seq": 3,
+          "length_cm": 111,
+          "pile_id": "V06-PYSTY-111",
+          "pile_label": "Pino V06 pysty 111 cm",
+          "piece_id": "V06-PYSTY-111-05",
+          "piece_label": "Pino V06 pysty 111 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 6,
+          "instruction": "Sahaa 111 cm ja pinoa: Pino V06 pysty 111 cm"
+        }
+      ]
+    },
+    {
+      "id": "R048",
+      "number": 48,
+      "stock_length_cm": 500,
+      "model": 19,
+      "model_repeat": 1,
+      "planned_use_cm": 488,
+      "planned_waste_cm": 12,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R048-C01",
+          "seq": 1,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-11",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 11/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R048-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-09",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 9/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R048-C03",
+          "seq": 3,
+          "length_cm": 131,
+          "pile_id": "V04-PYSTY-131",
+          "pile_label": "Pino V04 pysty 131 cm",
+          "piece_id": "V04-PYSTY-131-03",
+          "piece_label": "Pino V04 pysty 131 cm — osa 3/5",
+          "kind": "pystyrima",
+          "interval": 4,
+          "instruction": "Sahaa 131 cm ja pinoa: Pino V04 pysty 131 cm"
+        }
+      ]
+    },
+    {
+      "id": "R049",
+      "number": 49,
+      "stock_length_cm": 500,
+      "model": 19,
+      "model_repeat": 2,
+      "planned_use_cm": 488,
+      "planned_waste_cm": 12,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R049-C01",
+          "seq": 1,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-12",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 12/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R049-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-10",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 10/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R049-C03",
+          "seq": 3,
+          "length_cm": 131,
+          "pile_id": "V04-PYSTY-131",
+          "pile_label": "Pino V04 pysty 131 cm",
+          "piece_id": "V04-PYSTY-131-04",
+          "piece_label": "Pino V04 pysty 131 cm — osa 4/5",
+          "kind": "pystyrima",
+          "interval": 4,
+          "instruction": "Sahaa 131 cm ja pinoa: Pino V04 pysty 131 cm"
+        }
+      ]
+    },
+    {
+      "id": "R050",
+      "number": 50,
+      "stock_length_cm": 500,
+      "model": 19,
+      "model_repeat": 3,
+      "planned_use_cm": 488,
+      "planned_waste_cm": 12,
+      "note": "OK",
+      "cuts": [
+        {
+          "id": "R050-C01",
+          "seq": 1,
+          "length_cm": 180,
+          "pile_id": "V04-VAAKA-180",
+          "pile_label": "Pino V04 vaaka 180 cm",
+          "piece_id": "V04-VAAKA-180-13",
+          "piece_label": "Pino V04 vaaka 180 cm — osa 13/13",
+          "kind": "vaakarima",
+          "interval": 4,
+          "instruction": "Sahaa 180 cm ja pinoa: Pino V04 vaaka 180 cm"
+        },
+        {
+          "id": "R050-C02",
+          "seq": 2,
+          "length_cm": 177,
+          "pile_id": "V02-VAAKA-177",
+          "pile_label": "Pino V02 vaaka 177 cm",
+          "piece_id": "V02-VAAKA-177-11",
+          "piece_label": "Pino V02 vaaka 177 cm — osa 11/11",
+          "kind": "vaakarima",
+          "interval": 2,
+          "instruction": "Sahaa 177 cm ja pinoa: Pino V02 vaaka 177 cm"
+        },
+        {
+          "id": "R050-C03",
+          "seq": 3,
+          "length_cm": 131,
+          "pile_id": "V04-PYSTY-131",
+          "pile_label": "Pino V04 pysty 131 cm",
+          "piece_id": "V04-PYSTY-131-05",
+          "piece_label": "Pino V04 pysty 131 cm — osa 5/5",
+          "kind": "pystyrima",
+          "interval": 4,
+          "instruction": "Sahaa 131 cm ja pinoa: Pino V04 pysty 131 cm"
+        }
+      ]
+    }
+  ]
+}
