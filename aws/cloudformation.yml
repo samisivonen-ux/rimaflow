@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: RimaFlow static PWA on private S3 bucket behind CloudFront HTTPS.
+Description: RimaFlow static PWA on private S3 behind CloudFront, with GitHub OIDC deployment.
 
 Parameters:
   SiteBucketName:
@@ -12,13 +12,32 @@ Parameters:
       - PriceClass_100
       - PriceClass_200
       - PriceClass_All
-    Description: CloudFront edge location price class.
+  GitHubOidcProviderArn:
+    Type: String
+    Default: arn:aws:iam::922683595485:oidc-provider/token.actions.githubusercontent.com
+  GitHubOwner:
+    Type: String
+    Default: samisivonen-ux
+  GitHubRepository:
+    Type: String
+    Default: rimaflow
+  GitHubBranch:
+    Type: String
+    Default: main
 
 Resources:
   SiteBucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
     Properties:
       BucketName: !Ref SiteBucketName
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
       OwnershipControls:
         Rules:
           - ObjectOwnership: BucketOwnerEnforced
@@ -46,7 +65,7 @@ Resources:
         Enabled: true
         DefaultRootObject: index.html
         PriceClass: !Ref PriceClass
-        HttpVersion: http2
+        HttpVersion: http2and3
         Origins:
           - Id: S3Origin
             DomainName: !GetAtt SiteBucket.RegionalDomainName
@@ -56,13 +75,8 @@ Resources:
         DefaultCacheBehavior:
           TargetOriginId: S3Origin
           ViewerProtocolPolicy: redirect-to-https
-          AllowedMethods:
-            - GET
-            - HEAD
-            - OPTIONS
-          CachedMethods:
-            - GET
-            - HEAD
+          AllowedMethods: [GET, HEAD, OPTIONS]
+          CachedMethods: [GET, HEAD]
           Compress: true
           CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
         CustomErrorResponses:
@@ -94,6 +108,40 @@ Resources:
               StringEquals:
                 AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${SiteDistribution}'
 
+  GitHubDeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub '${AWS::StackName}-github-deploy'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Ref GitHubOidcProviderArn
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+              StringLike:
+                token.actions.githubusercontent.com:sub: !Sub 'repo:${GitHubOwner}/${GitHubRepository}:ref:refs/heads/${GitHubBranch}'
+      Policies:
+        - PolicyName: static-site-deploy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt SiteBucket.Arn
+              - Effect: Allow
+                Action:
+                  - s3:DeleteObject
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Sub '${SiteBucket.Arn}/*'
+              - Effect: Allow
+                Action: cloudfront:CreateInvalidation
+                Resource: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${SiteDistribution}'
+
 Outputs:
   BucketName:
     Description: S3 bucket where static assets are uploaded.
@@ -104,3 +152,6 @@ Outputs:
   SiteUrl:
     Description: HTTPS URL for the mobile web app.
     Value: !Sub 'https://${SiteDistribution.DomainName}'
+  GitHubDeployRoleArn:
+    Description: GitHub Actions OIDC role for RimaFlow deployments.
+    Value: !GetAtt GitHubDeployRole.Arn
