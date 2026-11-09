@@ -21,9 +21,9 @@ Parameters:
   GitHubRepository:
     Type: String
     Default: rimaflow
-  GitHubBranch:
+  GitHubEnvironment:
     Type: String
-    Default: main
+    Default: production
 
 Resources:
   SiteBucket:
@@ -122,8 +122,7 @@ Resources:
             Condition:
               StringEquals:
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
-              StringLike:
-                token.actions.githubusercontent.com:sub: !Sub 'repo:${GitHubOwner}/${GitHubRepository}:ref:refs/heads/${GitHubBranch}'
+                token.actions.githubusercontent.com:sub: !Sub 'repo:${GitHubOwner}/${GitHubRepository}:environment:${GitHubEnvironment}'
       Policies:
         - PolicyName: static-site-deploy
           PolicyDocument:
