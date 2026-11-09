@@ -1,0 +1,53 @@
+name: Deploy RimaFlow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - app/**
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: rimaflow-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify release files
+        run: |
+          test -f app/index.html
+          test -f app/app.js
+          test -f app/style.css
+          grep -q "RimaFlow 2.0 optimized" app/index.html
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::922683595485:role/kuisti-rimaflow-github-deploy
+          aws-region: eu-north-1
+
+      - name: Upload static app
+        run: aws s3 sync app s3://rimaflow-922683595485-eu-north-1 --delete --cache-control "no-cache"
+
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id E2YSRR1J75IQBQ --paths "/*"
+
+      - name: Smoke test production
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if curl -fsS https://d3tkr345snrmvs.cloudfront.net/ | grep -q "RimaFlow 2.0 optimized"; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1
